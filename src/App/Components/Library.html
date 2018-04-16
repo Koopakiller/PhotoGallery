@@ -1,0 +1,35 @@
+<div class='main-grid' *ngIf='library'>
+
+    <div [ngStyle]=' { "background-image": "url(" + selectedPhotoPath + ")" } ' class='photo-background photo'></div>
+    <div [ngStyle]=' { "background-image": "url(" + selectedPhotoPath + ")" } ' class='photo-foreground photo'></div>
+
+    <a *ngIf='previousPath' [routerLink]='[previousPath]' class='previous-photo navigation-button'>&lt;</a>
+    <a *ngIf='nextPath' [routerLink]='[nextPath]' class='next-photo navigation-button'>&gt;</a>
+
+    <div class='photo-list' *ngIf='showPhotoList'>
+        <ng-template ngFor let-photo [ngForOf]="photos">
+            <a [routerLink]='["/Library", library.path, "Photo", photo]' *ngIf='photo === selectedPhoto' class='selected' scrollTo>
+                <img alt='Photo {{photo}}' src='/Photos/Data/{{library.path}}/x150/{{photo}}' style='max-height: 150px;' />
+            </a>
+            <a [routerLink]='["/Library", library.path, "Photo", photo]' *ngIf='photo !== selectedPhoto'>
+                <img alt='Photo {{photo}}' src='/Photos/Data/{{library.path}}/x150/{{photo}}' style='max-height: 150px;' />
+            </a>
+        </ng-template>
+    </div>
+
+    <a class='photo-list-button' (click)='showPhotoList=!showPhotoList'>
+        <span class='shadow'>
+            <span class='shadow'>
+                <span *ngIf='showPhotoList'>Bildband ausblenden</span>
+                <span *ngIf='!showPhotoList'>Bildband einblenden</span>
+            </span>
+        </span>
+    </a>
+
+    <a routerLink='/' class='back-to-libraries'>
+        <span class='shadow'>
+            <span class='shadow'>Zu den Bibliotheken</span>
+        </span>
+    </a>
+
+</div>

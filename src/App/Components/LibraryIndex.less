@@ -1,0 +1,38 @@
+@import "../Styles/common.less";
+
+.container {
+    margin: @padding-small;
+    a {
+        margin: @padding-small;
+        color: @font-color;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        img {
+            height: 150px;
+        }
+        .label {
+            background-color: @background-color-transparent;
+            padding: @padding;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .name {
+                font-weight: 500;
+                display: block;
+                margin: 0;
+            }
+            .description {
+                display: block;
+                margin: 0;
+            }
+        }
+        &:hover {
+            .description {
+                height: auto;
+            }
+        }
+    }
+}

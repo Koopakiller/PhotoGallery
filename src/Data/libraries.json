@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "path": "Sample",
+            "name": "Sample",
+            "description": "Eine Beispiel-Bibliothek mit Bildern aus Rüdersdorf",
+            "thumbnail": "DSC_0005.jpg"
+        },
+        {
+            "path": "Sample",
+            "name": "Sample",
+            "description": "Eine Beispiel-Bibliothek mit Bildern aus Rüdersdorf",
+            "thumbnail": "DSC_0020.jpg"
+        },
+        {
+            "path": "Sample",
+            "name": "Sample",
+            "description": "Eine Beispiel-Bibliothek mit Bildern aus Rüdersdorf",
+            "thumbnail": "DSC_0028.jpg"
+        },
+        {
+            "path": "Sample",
+            "name": "Sample",
+            "description": "Eine Beispiel-Bibliothek mit Bildern aus Rüdersdorf",
+            "thumbnail": "DSC_0439.jpg"
+        },
+        {
+            "path": "Sample",
+            "name": "Sample",
+            "description": "Eine Beispiel-Bibliothek mit Bildern aus Rüdersdorf",
+            "thumbnail": "DSC_0612.jpg"
+        },
+        {
+            "path": "Sample",
+            "name": "Sample",
+            "description": "Eine Beispiel-Bibliothek mit Bildern aus Rüdersdorf",
+            "thumbnail": "DSC_0796.jpg"
+        }
+    ]
+}
